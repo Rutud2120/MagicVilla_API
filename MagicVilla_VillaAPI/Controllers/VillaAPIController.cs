@@ -143,7 +143,7 @@ Therefore, the changes made to upvilla are reflected in the original object with
         [HttpPatch("{Id:int}", Name = "UpdatePartialVilla")]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
         public IActionResult UpdatePartialVilla(int Id, JsonPatchDocument <VillaDTO>   parVilla)
         {
             if (parVilla == null || Id==0)
