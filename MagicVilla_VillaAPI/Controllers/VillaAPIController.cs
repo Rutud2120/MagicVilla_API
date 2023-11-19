@@ -80,7 +80,7 @@ namespace MagicVilla_VillaAPI.Controllers
 
         }
 
-        [HttpDelete("{Id:int}", Name = "DeeteVilla")]
+        [HttpDelete("{Id:int}", Name = "DeleteVilla")]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
@@ -140,7 +140,7 @@ Therefore, the changes made to upvilla are reflected in the original object with
 
 
 
-        [HttpPut("{Id:int}", Name = "UpdatePartialVilla")]
+        [HttpPatch("{Id:int}", Name = "UpdatePartialVilla")]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
 
